@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="digest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="div" ng-controller="msg">
+
+        a = <input ng-model="a" />
+        <div>a = {{a}}</div>
+        <hr>
+        b = <input ng-model="b" />
+        <div>b = {{b}}</div>
+        <hr>
+        <button ng-click="calcSum()">Calc Sum with angular context</button>
+        <button onclick="btnClick()">Calc Sum without angular context (directly from html)</button>
+        <div>Sum = {{s}}</div>
+
+    </div>
+</body>
+
+</html>

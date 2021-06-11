@@ -1,0 +1,42 @@
+<!-- angular is framework
+jquery is library -->
+<!DOCTYPE html>
+<html ng-app="myModule">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div ng-app>SUM OF 40 + 60 = {{40+60}}</div> -->
+    <!-- attach angular to process any angular tags-->
+    <!-- <div>SUM OF 40 + 60 = {{40+60}}</div> -->
+    <div ng-controller="myController">
+        First Name: {{employee.firstName}}<br>
+        Last Name: {{employee.lastName}}<br>
+        Department: {{employee.dept}}<br>
+    </div>
+
+    <div ng-controller="myController1">
+        {{message}}
+    </div>
+</body>
+
+</html>
+
+<!--
+    modules - container for storing directives, controllers etc,
+    module might be a feature like online payment
+    module implements certain part of the project
+    controllers - 
+-->
